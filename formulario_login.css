@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+section {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    background-color: #ff0000;
+    text-align: center;
+    font-family: 'Elms Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 4%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    border-radius: 5px 5px 0 0;
+}
+
+form {
+    margin: 20px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    border: none;
+    background-color: white;
+    color: grey;
+    font-family: 'Elms Sans', sans-serif;
+    font-size: 0.8rem;
+}
+
+section form input {
+    margin: 10px auto;
+    font-family: 'Elms Sans', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.form-box select {
+    margin: 10px auto;
+    font-family: 'Elms Sans', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    color: grey;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-family: 'Elms Sans', sans-serif;
+    font-size: 1rem;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100dvw;
+}
+
+.form-box {
+    background-color: white;
+    width: 25dvw;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 5px;
+}
+
+.logo-box img {
+    position: absolute;
+    width: 25%;
+    z-index: -2;
+    top: 35%;
+    left: 62%;
+}
+
+.EsquinaIzq {
+    position: absolute;
+    width: 35%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.EsquinaDer {
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    background-color: #920000
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .form-container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-box img {
+        position: static;
+        width: 45%;
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMAS DC.</title>
+    <link rel="stylesheet" href="formulario_registro.css">
+</head>
+
+<body>
+    <section class="principal">
+        <div class="form-container">
+            <img src="img/Vector 1.png" alt="EsquinaIzq" class="EsquinaIzq">
+            <h1>PUMAS DC.</h1>
+            <p>Por favor, seleccione el tipo de usuario a registrar.</p>
+            <div class="detalle"></div>
+            <div class="selectRol">
+                <select>
+                    <option value="" disabled selected>Seleccione un rol</option>
+                    <option value="admin">Admin</option>
+                    <option value="jugador">Jugador</option>
+                </select>
+            </div>
+            <hr class="separador">
+            <form>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellidos">
+                <div class="tipoDeDocumento">
+                    <label for="tipoDocumento">Tipo de documento</label>
+                    <select id="tipoDocumento">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="">Cédula de ciudadanía</option>
+                        <option value="">Tarjeta de identidad</option>
+                        <option value="">Cédula de extranjería</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <input type="text" placeholder="Número de documento">
+                <input type="tel" placeholder="Número de telefono">
+                <input type="email" placeholder="Correo electrónico">
+                <div class="tipoDeGenero">
+                    <label for="tipoGenero">Seleccione un género</label>
+                    <select id="tipoGenero">
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="">Masculino</option>
+                        <option value="">Femenino</option>
+                        <option value="">No binario</option>
+                        <option value="">Otro</option>
+                        <option value="">Prefiero no decirlo</option>
+                    </select>
+                </div>
+                <div class="slectEps">
+                    <label>Seleccione una EPS</label>
+                    <select>
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="">EPS Sura</option>
+                        <option value="">Sanitas</option>
+                        <option value="">Compensar</option>
+                        <option value="">Nueva EPS</option>
+                        <option value="">Famisanar</option>
+                        <option value="">Coosalud</option>
+                        <option value="">Salud Total</option>
+                        <option value="">S.O.S</option>
+                        <option value="">Otra</option>
+                    </select>
+                </div>
+                <div class="fechaNac">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input id="fecha" type="date">
+                </div>
+                <div class="slectTalla">
+                    <label>Seleccione una talla</label>
+                    <select>
+                        <option value="" disabled selected>Seleccione</option>
+                        <option value="">XS</option>
+                        <option value="">S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                        <option value="">XXXL</option>
+                    </select>
+                </div>
+                <input type="tel" placeholder="Número teléfono acudiente">
+                <input type="text" placeholder="Nombre del acudiente">
+                <input class="password" type="password" placeholder="Password">
+                <button class="btn-registrar" type="submit">Registrar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
